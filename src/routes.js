@@ -4,7 +4,7 @@ import React from 'react';
 import Router from 'react-routing/src/Router';
 import http from './core/HttpClient';
 import App from './components/App';
-import ContentList from './components/ContentList.jsx';
+import ContentList from './components/ContentPage/ContentList.jsx';
 import ContactPage from './components/ContactPage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
