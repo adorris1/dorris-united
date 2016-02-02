@@ -7,7 +7,7 @@ import withStyles from '../../decorators/withStyles';
 import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
-
+import ContentList from '../ContentList'
 @withContext
 @withStyles(styles)
 class App extends Component {
