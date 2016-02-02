@@ -3,13 +3,18 @@ import mui from 'material-ui';
 import ListItem from 'material-ui/lib/lists/list-item';
 
 var Content = React.createClass({
+  handleChnage: function(){
+    "use strict";
+    this.props.onChange(this);
+  },
 
 render:function() {
+  var listItemClassList = this.props.active;
   return (
-    <ListItem
-      primaryText={this.props.data.painLocated}>
+
+    <ListItem onChange ={this.handleChnage} className = {listItemClassList}
+      primaryText={this.props.data.sufferingFrom}>
       <p>
-        {this.props.data.sufferingFrom}<br/>
         {this.props.data.symptom}
       </p>
     </ListItem>
